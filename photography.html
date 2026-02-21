@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography — K.P. Rodriguez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="site-title">
+                <a href="index.html">K.P. Rodriguez</a>
+            </div>
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="writing.html">Writing</a>
+                <a href="research.html">Research</a>
+                <a href="photography.html" class="active">Photography</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="divider"></div>
+
+        <main>
+            <h1 class="page-title">Photography</h1>
+            <p class="photo-intro">35mm film. Oakland, San Francisco, Austin, and elsewhere.</p>
+
+            <div class="photo-grid">
+                <!-- 
+                    To add photos:
+                    1. Place image files in the /assets/photos/ directory
+                    2. Add an <img> tag for each:
+                    
+                    <img src="assets/photos/your-photo.jpg" alt="Description" onclick="openLightbox(this)">
+                    
+                    The grid will automatically arrange them in 3 columns (2 on mobile).
+                    Clicking any image opens it full-screen in the lightbox.
+                -->
+
+                <!-- Placeholder images - replace with your curated selection -->
+                <img src="assets/portrait.jpeg" alt="Film photograph" onclick="openLightbox(this)">
+
+                <!-- Add more images here -->
+            </div>
+        </main>
+
+        <div class="divider" style="margin-top: 3rem;"></div>
+
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="mailto:kph.rodriguez@gmail.com">Email</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        function openLightbox(img) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
