@@ -100,7 +100,7 @@ a {
 
 /* Home Hero */
 .home-content {
-    padding: 4rem 0 2.5rem;
+    padding: 4.5rem 0 2.5rem;
 }
 
 .hero {
@@ -126,9 +126,9 @@ a {
 }
 
 .hero-location {
-    font-size: 0.88rem;
+    font-size: 0.89rem;
     color: var(--color-text-secondary);
-    font-weight: 300;
+    font-weight: 320;
 }
 
 /* Footer */
@@ -306,7 +306,7 @@ a {
 
 .photo-grid img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 3 / 2;
     object-fit: cover;
     filter: contrast(1.02) saturate(0.9);
     transition: filter 0.3s ease, opacity 0.3s ease;
