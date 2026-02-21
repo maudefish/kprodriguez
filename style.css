@@ -100,7 +100,7 @@ a {
 
 /* Home Hero */
 .home-content {
-    padding: 3rem 0 3rem;
+    padding: 4rem 0 2.5rem;
 }
 
 .hero {
@@ -117,7 +117,7 @@ a {
     width: 340px;
     height: auto;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 3px;
     filter: contrast(1.02) saturate(0.95);
 }
 
