@@ -3,7 +3,8 @@
    Editorial minimal aesthetic
    ======================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap');*/
+/* Fonts loaded via <link> in HTML <head> */
 
 :root {
     --color-text: #1a1a1a;
