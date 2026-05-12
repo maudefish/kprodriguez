@@ -503,3 +503,33 @@ a {
         gap: 0.4rem;
     }
 }
+
+/* ========================================
+   About Page
+   ======================================== */
+.about-content {
+    padding: 2rem 0;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 560px;
+}
+
+.about-text p {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.75;
+}
+
+.about-text a {
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-border);
+    transition: border-color 0.2s ease;
+}
+
+.about-text a:hover {
+    border-color: var(--color-text);
+}
