@@ -604,6 +604,16 @@ a {
     text-indent: 0;
 }
 
+.essay-body a {
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-border);
+    transition: border-color 0.2s ease;
+}
+
+.essay-body a:hover {
+    border-color: var(--color-text);
+}
+
 .essay-body ol {
     margin: 1rem 0 1rem 2.6em;
     padding: 0;
